@@ -1,0 +1,11 @@
+Hibernate
+architech - các mô hình ứng dụng
+OOP
+Java
+xử lí bất đồng bộ
+Spring Boot
+dns,dhcp,ip v4, ipv6
+restful api
+MYSQL
+CTDL
+Client server
