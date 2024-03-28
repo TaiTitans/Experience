@@ -15,7 +15,12 @@ module.exports = function(app) {
 ```
 ## Active in vue.config.js
 ```
-  devServer: {
-    before: require('./src/proxy.js')
-  }
+devServer: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000/',
+        changeOrigin: true,
+      },
+    },
+  },
 ```
