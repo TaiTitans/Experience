@@ -9,4 +9,3 @@ Có 2 loại socket:
 - Socket TCP: Kênh kết nối có thứ tự và đáng tin cậy. Dữ liệu được chia làm các gói và đảm bảo đến đích một cách có thứ tự và không bị mất. → Thích hợp ứng dụng cần truyền dữ liệu chính xác tin cậy như game, trình duyệt web….
 - Socket UDP: giao thức ko kết nối, k thứ tự, ko đảm bảo → Thích hợp cho các ứng dụng truyền dữ liệu nhanh chóng như tin nhắn, streaming ….
 
-![image-20240402160930712](img/image-20240402160930712.png)
