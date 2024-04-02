@@ -6,7 +6,7 @@ Server- Side Rendering (SSR) → Kết xuất phía máy chủ:
 
 SPA → Máy chủ gửi duy nhất một trang HTML cho mọi đường dẫn được truy xuất.
 
-![](D:\Experience\Documents\4. System Website\img\image-20240402161047841.png)
+![](img\image-20240402161047841.png)
 
 **Server Side Rendering (SSR):**
 
