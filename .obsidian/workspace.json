@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Documents/5. Java Core/String-SingleArray-MultiArray.md",
+                "file": "Documents/OOP/OOP-Let-Started.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "13495e05e9d64a47",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Documents/5. Java Core/String-SingleArray-MultiArray.md",
+                "file": "Documents/OOP/OOP-Let-Started.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Documents/5. Java Core/String-SingleArray-MultiArray.md",
+                "file": "Documents/OOP/OOP-Let-Started.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Documents/5. Java Core/String-SingleArray-MultiArray.md"
+                "file": "Documents/OOP/OOP-Let-Started.md"
               }
             }
           }
@@ -148,6 +149,14 @@
   },
   "active": "bc2f2615f651cb1e",
   "lastOpenFiles": [
+    "Assets/Images/OOP/oop.jpg",
+    "Assets/Images/OOP/oop.jpg.crdownload",
+    "Assets/Images/OOP",
+    "Assets/Images/New folder",
+    "Documents/OOP/OOP-Let-Started.md",
+    "Documents/OOP",
+    "Documents/5. Java Core/JavaCollection.md",
+    "Documents/5. Java Core/RuleOfJava.md",
     "Documents/5. Java Core/String-SingleArray-MultiArray.md",
     "Assets/Images/JavaCore/String.PNG",
     "Untitled.canvas"
