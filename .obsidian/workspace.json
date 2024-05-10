@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "13495e05e9d64a47",
@@ -149,11 +148,12 @@
   },
   "active": "bc2f2615f651cb1e",
   "lastOpenFiles": [
+    "Documents/OOP/SOLID_1-Single Responsibility Principle.md",
+    "Documents/OOP/OOP-Let-Started.md",
     "Assets/Images/OOP/oop.jpg",
     "Assets/Images/OOP/oop.jpg.crdownload",
     "Assets/Images/OOP",
     "Assets/Images/New folder",
-    "Documents/OOP/OOP-Let-Started.md",
     "Documents/OOP",
     "Documents/5. Java Core/JavaCollection.md",
     "Documents/5. Java Core/RuleOfJava.md",
