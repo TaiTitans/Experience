@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Documents/OOP/OOP-Let-Started.md",
+                "file": "Documents/5. Java Core/JavaNetworkSocket.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Documents/OOP/OOP-Let-Started.md",
+                "file": "Documents/5. Java Core/JavaNetworkSocket.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Documents/OOP/OOP-Let-Started.md",
+                "file": "Documents/5. Java Core/JavaNetworkSocket.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Documents/OOP/OOP-Let-Started.md"
+                "file": "Documents/5. Java Core/JavaNetworkSocket.md"
               }
             }
           }
@@ -148,8 +148,14 @@
   },
   "active": "bc2f2615f651cb1e",
   "lastOpenFiles": [
-    "Documents/OOP/SOLID_1-Single Responsibility Principle.md",
+    "Documents/5. Java Core/Serialization_and_Deserialization_P1.md",
+    "Documents/5. Java Core/JavaNetworkSocket.md",
+    "Assets/Images/JavaCore/serialize-deserialize-java.png",
+    "Assets/Images/JavaCore/serialize-deserialize-java.png.crdownload",
+    "Documents/5. Java Core/JavaMemoryManagement.md",
+    "Assets/Images/JavaCore/Pasted image 20240512172955.png",
     "Documents/OOP/OOP-Let-Started.md",
+    "Documents/OOP/SOLID_1-Single Responsibility Principle.md",
     "Assets/Images/OOP/oop.jpg",
     "Assets/Images/OOP/oop.jpg.crdownload",
     "Assets/Images/OOP",
