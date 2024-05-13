@@ -38,7 +38,7 @@
 9. **Plugin và Mở Rộng**:
     
     - Gradle hỗ trợ một loạt các plugin và mở rộng cho các tác vụ như kiểm tra chất lượng mã, đo lường mã, tạo tài liệu, vv. Khám phá Gradle Plugin Portal để tìm các plugin có sẵn.
-10. **Biến Thể Build**:
+10. **Build Varriant**:
     
     - Gradle cho phép bạn định nghĩa các biến thể build cho các môi trường khác nhau (ví dụ: phát triển, sản xuất) hoặc cấu hình (ví dụ: debug, release). Sử dụng khối `buildTypes` trong `build.gradle` để định nghĩa các biến thể này.
 
