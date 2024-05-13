@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Documents/2.SpringBoot/Spring_Initializr.md",
+                "file": "Documents/2.SpringBoot/SpringCore/Terminology.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Documents/2.SpringBoot/Spring_Initializr.md",
+                "file": "Documents/2.SpringBoot/SpringCore/Terminology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Documents/2.SpringBoot/Spring_Initializr.md",
+                "file": "Documents/2.SpringBoot/SpringCore/Terminology.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Documents/2.SpringBoot/Spring_Initializr.md"
+                "file": "Documents/2.SpringBoot/SpringCore/Terminology.md"
               }
             }
           }
@@ -148,9 +148,10 @@
   },
   "active": "bc2f2615f651cb1e",
   "lastOpenFiles": [
+    "Documents/2.SpringBoot/Spring_Initializr.md",
+    "Documents/2.SpringBoot/SpringCore/Terminology.md",
     "Documents/2.SpringBoot/LayeredArchitecture.md",
     "Documents/2.SpringBoot/SpringCore",
-    "Documents/2.SpringBoot/Spring_Initializr.md",
     "Documents/2.SpringBoot/SpringVsSpringBootvsSpringMVC.md",
     "Documents/5. Java Core/BuildTool/Gradle.md",
     "Documents/Untitled",
