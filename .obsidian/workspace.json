@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Documents/2.SpringBoot/SpringBootArchitecture.md",
+                "file": "Documents/5. Java Core/JSP.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Documents/2.SpringBoot/SpringBootArchitecture.md",
+                "file": "Documents/5. Java Core/JSP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Documents/2.SpringBoot/SpringBootArchitecture.md",
+                "file": "Documents/5. Java Core/JSP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Documents/2.SpringBoot/SpringBootArchitecture.md"
+                "file": "Documents/5. Java Core/JSP.md"
               }
             }
           }
@@ -148,40 +148,50 @@
   },
   "active": "bc2f2615f651cb1e",
   "lastOpenFiles": [
+    "Assets/Images/jsp-la-gi.png",
+    "Assets/Images/jsp-la-gi.png.crdownload",
+    "Documents/2.SpringBoot/SpringCore/ApacheTomcat.md",
+    "Documents/5. Java Core/JSP.md",
+    "Documents/2.SpringBoot/SpringCore/Untitled.md",
+    "Documents/5. Java Core/Servlet.md",
+    "Assets/Images/kien-truc-servlet.png",
+    "Assets/Images/kien-truc-servlet.png.crdownload",
+    "Documents/2.SpringBoot/ProjectComponents/SB-Web.md",
+    "Documents/2.SpringBoot/ProjectComponents/SB-Starters.md",
+    "Documents/2.SpringBoot/ProjectComponents/SB-ApplicationProperties.md",
+    "Documents/2.SpringBoot/ProjectComponents/SB-Annotations.md",
+    "Documents/2.SpringBoot/ProjectComponents/SB- DependencyManagement.md",
+    "Assets/Images/SpringBoot/spring-boot-application-properties1.png",
+    "Assets/Images/SpringBoot/spring-boot-application-properties1.png.crdownload",
+    "Documents/2.SpringBoot/SpringBootArchitecture.md",
+    "Documents/2.SpringBoot/ProjectComponents",
+    "Assets/Images/SpringBoot/spring-boot-architecture2.png",
+    "Assets/Images/SpringBoot/spring-boot-architecture2.png.crdownload",
+    "Assets/Images/SpringBoot/spring-boot-architecture.png",
+    "Assets/Images/SpringBoot/spring-boot-architecture.png.crdownload",
+    "Assets/Images/SpringBoot",
+    "Assets/Images/New folder",
     "Documents/5. Java Core/BuildTool/Gradle.md",
     "Documents/5. Java Core/BuildTool/WhatIsBuildTool.md",
-    "Documents/2.SpringBoot/SpringBootArchitecture.md",
     "Assets/Images/JavaCore/bangdiem_hk1_nam4.pdf",
     "Documents/2.SpringBoot/SpringVsSpringBootvsSpringMVC.md",
     "Documents/2.SpringBoot/Spring_Initializr.md",
     "Documents/2.SpringBoot/SpringCore/Terminology.md",
     "Documents/2.SpringBoot/LayeredArchitecture.md",
     "Documents/2.SpringBoot/SpringCore",
-    "Documents/Untitled",
     "Documents/5. Java Core/BasicOfThreads.md",
-    "Documents/5. Java Core/BuildTool",
     "Documents/5. Java Core/GarbageCollection_in_Java.md",
     "Documents/5. Java Core/HowJVMWorks.md",
     "Documents/5. Java Core/Serialization_and_Deserialization_P1.md",
     "Assets/Images/JavaCore/jvm-architecture.png",
-    "Assets/Images/JavaCore/jvm-architecture.png.crdownload",
     "Documents/5. Java Core/JavaStream.md",
     "Documents/5. Java Core/JavaGenerics.md",
     "Documents/5. Java Core/JavaNetworkSocket.md",
     "Assets/Images/JavaCore/serialize-deserialize-java.png",
-    "Assets/Images/JavaCore/serialize-deserialize-java.png.crdownload",
     "Documents/5. Java Core/JavaMemoryManagement.md",
     "Assets/Images/JavaCore/Pasted image 20240512172955.png",
     "Documents/OOP/OOP-Let-Started.md",
-    "Documents/OOP/SOLID_1-Single Responsibility Principle.md",
     "Assets/Images/OOP/oop.jpg",
-    "Assets/Images/OOP/oop.jpg.crdownload",
-    "Assets/Images/OOP",
-    "Assets/Images/New folder",
-    "Documents/OOP",
-    "Documents/5. Java Core/JavaCollection.md",
-    "Documents/5. Java Core/RuleOfJava.md",
-    "Documents/5. Java Core/String-SingleArray-MultiArray.md",
     "Assets/Images/JavaCore/String.PNG",
     "Untitled.canvas"
   ]
