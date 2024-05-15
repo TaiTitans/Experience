@@ -8,6 +8,10 @@ Các khái niệm quan trọng như:
 
 => Giúp LTV xây dựng ứng dụng có tính linh hoạt và dễ bảo trì.
 
+Đối tượng trong OOP bao gồm 2 thành phần chính:
+
+- Thuộc tính (Attribute): là những thông tin, đặc điểm của đối tượng
+- Phương thức (Method): là những hành vi mà đối tượng có thể thực hiện
 ## Đi sâu vào khái niệm
 
 ![OOP](../../Assets/Images/OOP/oop.jpg)
