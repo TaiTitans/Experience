@@ -6,6 +6,6 @@
 
 -> Mỗi request sẽ gửi kèm AT để server định danh.
 
--> Lưu access vào Cookie HTTP Only -> Bảo mật cao hơn Local Storage.
+-> Lưu access vào Cookie (HTTP Only: true) -> Bảo mật cao hơn Local Storage.
 
 -> Local Storage Nhanh hơn nên tuỳ vào mô hình ứng dụng.
