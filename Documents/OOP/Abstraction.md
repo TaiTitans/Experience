@@ -1,7 +1,7 @@
 
 ---
 
-****Abstraction in Java**** is the process in which we only show essential details/functionality to the user. The non-essential implementation details are not displayed to the user.
+**Abstraction in Java*** is the process in which we only show essential details/functionality to the user. The non-essential implementation details are not displayed to the user.
 
 
 ## What is Abstraction in Java?
