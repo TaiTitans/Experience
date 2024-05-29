@@ -37,9 +37,10 @@
     - Hầu hết các IDE hiện đại như IntelliJ IDEA, Eclipse và VSCode đều hỗ trợ tích hợp cho Gradle. Nhập dự án Gradle của bạn vào IDE của bạn để có trải nghiệm phát triển tích hợp hơn.
 9. **Plugin và Mở Rộng**:
     
-    - Gradle hỗ trợ một loạt các plugin và mở rộng cho các tác vụ như kiểm tra chất lượng mã, đo lường mã, tạo tài liệu, vv. Khám phá Gradle Plugin Portal để tìm các plugin có sẵn.
+    - Gradle supports a wide range of plugins and extensions for tasks such as code quality checks, code measurement, documentation generation, etc. Explore the Gradle Plugin Portal to find available plugins.
 10. **Build Varriant**:
     
-    - Gradle cho phép bạn định nghĩa các biến thể build cho các môi trường khác nhau (ví dụ: phát triển, sản xuất) hoặc cấu hình (ví dụ: debug, release). Sử dụng khối `buildTypes` trong `build.gradle` để định nghĩa các biến thể này.
+    - Gradle allows you to define build variants for different environments (e.g., development, production) or configurations (e.g., debug, release). Use the `buildTypes` block in `build.gradle` to define these variants.
+
 
 Sự linh hoạt của Gradle, kết hợp với hệ sinh thái plugin phong phú, làm cho nó trở thành lựa chọn phổ biến cho việc xây dựng các dự án Java có kích thước và độ phức tạp khác nhau. Thử nghiệm với các cấu hình và plugin khác nhau để tối ưu hóa quy trình build của bạn.
