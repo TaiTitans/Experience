@@ -9,3 +9,6 @@ restful api
 MYSQL
 CTDL
 Client server
+Khi nào 1 biến đc lưu trong stack khi nào trong heap
+https://viblo.asia/p/su-khac-nhau-giua-bo-nho-heap-va-bo-nho-stack-trong-lap-trinh-E375zQb1lGW
+https://viblo.asia/p/database-connection-pooling-tong-quan-va-implement-benchmark-38X4EN0oJN2
