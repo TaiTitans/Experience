@@ -42,3 +42,122 @@ Redis có thể được sử dụng trong nhiều trường hợp khác nhau tr
 4. **Đếm và thống kê:** Redis có thể được sử dụng để theo dõi số lượt truy cập, đếm số lượng sự kiện, và thực hiện các thao tác thống kê thời gian thực một cách nhanh chóng và hiệu quả.
     
 5. **Hệ thống pub/sub:** Redis hỗ trợ mô hình publish/subscribe, cho phép các thành phần của ứng dụng giao tiếp với nhau thông qua các kênh tin nhắn, rất hữu ích trong các hệ thống phân tán và microservices.
+
+
+
+---
+
+#### Các Lệnh Cơ Bản
+
+- **SET và GET:**
+    
+    `SET key value 
+    `GET key`
+    
+- **Xóa Dữ Liệu:**
+    
+    `DEL key`
+    
+- **Kiểm Tra Sự Tồn Tại của Key:**
+    
+    `EXISTS key`
+    
+- **Tăng Giá Trị:**
+    
+    `INCR key`
+    
+- **Danh Sách (List):**
+    
+    `LPUSH list_name value LRANGE list_name 0 -1`
+
+---
+
+### 2. Expiration Policies
+
+Redis cho phép thiết lập thời gian sống (TTL) cho các key, giúp tự động xóa dữ liệu sau một khoảng thời gian nhất định.
+
+- **Thiết Lập TTL:**
+    
+    `SET key value EX 60  # key sẽ hết hạn sau 60 giây`
+    
+- **Kiểm Tra TTL:**
+    
+    `TTL key`
+    
+- **Xóa TTL:**
+    
+    `PERSIST key`
+
+
+---
+### 3. Persistence
+
+Redis hỗ trợ hai phương pháp lưu trữ dữ liệu để đảm bảo tính bền vững (durability):
+
+- **Snapshotting (RDB):** Lưu trữ toàn bộ dữ liệu theo khoảng thời gian định kỳ.
+    
+    - Cấu hình trong `redis.conf`:
+        
+        
+        `save 900 1  # Mỗi 900 giây nếu có ít nhất 1 thay đổi`
+        
+- **Append-Only File (AOF):** Lưu trữ mỗi lệnh ghi vào một file log.
+    
+    - Bật AOF trong `redis.conf`:
+        
+        
+        `appendonly yes`
+
+
+---
+### 4. Cache Penetration
+
+Cache Penetration xảy ra khi có nhiều yêu cầu tìm kiếm các key không tồn tại trong cache và database, dẫn đến nhiều truy vấn đến database.
+
+- **Giải Pháp:**
+    - Cache các giá trị null.
+    - Sử dụng Bloom Filter để kiểm tra sự tồn tại của key trước khi truy vấn cache hoặc database.
+
+### 5. Cache Avalanche
+
+Cache Avalanche xảy ra khi nhiều key hết hạn cùng một lúc, dẫn đến một lượng lớn truy vấn đổ dồn về database.
+
+- **Giải Pháp:**
+    - Thiết lập thời gian hết hạn khác nhau cho các key.
+    - Sử dụng cơ chế làm mới cache trước khi nó hết hạn.
+
+### 6. Cache Warm-Up
+
+Cache Warm-Up là quá trình tải dữ liệu vào cache trước khi hệ thống bắt đầu xử lý yêu cầu, giúp giảm thiểu độ trễ khi truy cập dữ liệu lần đầu.
+
+- **Cách Thực Hiện:**
+    - Tải trước các dữ liệu thường xuyên truy cập khi hệ thống khởi động.
+    - Sử dụng các công cụ tự động làm ấm cache.
+
+### 7. Distributed Lock
+
+Redis có thể được sử dụng để triển khai cơ chế khóa phân tán nhằm ngăn chặn các race condition trong môi trường phân tán.
+
+- **Cách Triển Khai:**
+    - Sử dụng lệnh `SETNX` (set if not exists) để thiết lập khóa.
+    - Thiết lập thời gian sống cho khóa để tránh deadlock.
+    - Sử dụng các thư viện như Redlock để triển khai khóa phân tán an toàn.
+
+### 8. Data Sharding
+
+Data Sharding là quá trình phân chia dữ liệu thành các phần nhỏ hơn và lưu trữ chúng trên nhiều máy chủ Redis khác nhau.
+
+- **Cách Thực Hiện:**
+    - Sử dụng các công cụ như Redis Cluster hoặc các giải pháp sharding của bên thứ ba.
+    - Cấu hình Redis Cluster:
+```SHELL
+redis-server --cluster-enabled yes
+redis-server --cluster-config-file nodes.conf
+```
+
+### 9. High Availability
+
+Redis hỗ trợ nhiều phương pháp để đảm bảo tính sẵn sàng cao của hệ thống.
+
+- **Replication:** Redis hỗ trợ cấu hình master-slave để sao chép dữ liệu từ máy chủ chính (master) sang máy chủ phụ (slave).
+- **Sentinel:** Redis Sentinel cung cấp cơ chế giám sát, thông báo và failover tự động cho các cụm Redis.

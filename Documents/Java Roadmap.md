@@ -114,3 +114,17 @@
     - Networking Models
 
 KeyCloak
+kiss
+Clean architecture
+học cách xử lý logging trong hệ thống
+naming convention
+Cqrs
+DDD
+khi gặp await thì luồng xử lý sao
+Hàm async ko dùng await thì sao
+Thread ở đâu sinh ra để xử lý
+máy tính cấp gì cho vụ xử lý thread này
+Học về session và cookie
+nắm đc jwt, black list và white list
+race condition
+idempotent
