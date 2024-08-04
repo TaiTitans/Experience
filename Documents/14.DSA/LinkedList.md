@@ -10,9 +10,3 @@
 3. **Danh sách liên kết vòng (Circular Linked List)**: Nút cuối cùng trỏ đến nút đầu tiên, tạo thành một vòng.
 
 ---
-
-## SinglyLinkedList
-
-==A singly linked list is a special type of [**linked list**](https://www.geeksforgeeks.org/data-structures/linked-list/) in which each node has only one link that points to the next node in the linked list.==
-
-![](https://media.geeksforgeeks.org/wp-content/uploads/singly-linkedlist.png)
