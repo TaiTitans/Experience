@@ -99,3 +99,12 @@ class HinhTron implements HinhVe {
 ## Tóm lại:
 
 Lựa chọn sử dụng lớp trừu tượng hay giao diện phụ thuộc vào nhu cầu cụ thể của bạn. Lớp trừu tượng phù hợp khi bạn muốn cung cấp triển khai mặc định và thiết lập cấu trúc phân cấp, trong khi giao diện phù hợp khi bạn muốn định nghĩa hành vi chung và tạo sự linh hoạt cho các lớp con.
+
+### **Khi nào chọn cái nào?**
+
+|**Tiêu chí**|**Abstract class**|**Interface**|
+|---|---|---|
+|**Kế thừa logic chung**|Dùng khi cần mã logic tái sử dụng|Không phù hợp cho logic dùng chung (trước Java 8)|
+|**Đa kế thừa**|Không hỗ trợ|Hỗ trợ|
+|**Mối quan hệ**|"is-a" (là một loại gì đó)|"can-do" (có thể làm gì đó)|
+|**Ưu tiên thiết kế**|Dùng để tạo cấu trúc cơ sở|Dùng để định nghĩa hành vi|

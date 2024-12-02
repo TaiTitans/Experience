@@ -7,7 +7,7 @@ Tại sao em chọn công ty này mà không phải công ty khác
 "I chose this company because it aligns with my career goals and values. Your reputation for innovation, commitment to employee development, and strong company culture are key factors that attracted me. "
 
 mục tiêu của em là gì khi tôi đang ứng tuyển vào vị trí intern
-"My goal as an intern is to gain hands-on experience in the field, develop my skills, and contribute to meaningful projects. I aim to learn from experienced professionals, understand the company's operations, and apply my knowledge in real-world scenarios. "
+"My goal as an fresher is to gain hands-on experience in the field, develop my skills, and contribute to meaningful projects. I aim to learn from experienced professionals, understand the company's operations, and apply my knowledge in real-world scenarios. "
 
 
 **Can you tell me about yourself?**
@@ -37,3 +37,11 @@ Gợi ý trả lời: "I know that your company is a leader in [industry/field] 
 **Describe a time when you faced a challenge and how you overcame it.**
 
 Gợi ý trả lời: "During my last project, we faced a significant technical issue that delayed our timeline. I took the initiative to research and identify a solution, collaborated with my team to implement it, and successfully completed the project on time."
+
+**Please introduce yourself.**
+
+Hello, My name is Phan Phat Tai, I am 22 years old, currently about to graduate from Computer Science at Can Tho University. I am currently pursuing a career as a Java Backend Developer. I have 2 months of internship experience at a local technology company. I am a cheerful, sociable person and eager to learn new technology. I am very impressed with NashTech because it is a large company with a professional working environment and a great place to develop my career.
+
+
+
+I know that my English speaking skill is not good yet. But I will try to practice and improve it in the near future.

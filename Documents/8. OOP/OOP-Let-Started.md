@@ -1,5 +1,5 @@
 `OOP viết tắt của Object-Oriented-Programming. Là một phương pháp lập trình cho phép xây dựng các ứng dụng dựa trên đối tượng. Các đối tượng thực tế trong thế giới thực. Tập trung vào đóng gói dữ liệu và chức năng liên quan vào một đối tượng riêng lẻ. Giúp cho việc phát triển, bảo trì và mở rộng trở nên dễ dàng.`
-Slide: https://drive.google.com/drive/folders/1eHNFPZ5cmb7iTMdONDvbZDQsIzu2SXUH?usp=sharing
+
 Các khái niệm quan trọng như:
 1. Kế thừa
 2. Đa hình
