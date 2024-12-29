@@ -45,3 +45,16 @@ Hello, My name is Phan Phat Tai, I am 22 years old, currently about to graduate 
 
 
 I know that my English speaking skill is not good yet. But I will try to practice and improve it in the near future.
+
+**Hỏi lại HR.**
+
+I want to ask what factors will determine whether the company accepts someone as a permanent employee?
+
+
+And how much is the support during the training period?
+
+Is it possible to negotiate a higher price?
+
+
+
+Thanks for your time. I look forward to working with you. Good health.
