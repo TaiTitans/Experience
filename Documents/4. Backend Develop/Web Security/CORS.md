@@ -1,34 +1,34 @@
 
 ---
 
-CORS (Cross-Origin Resource Sharing) là một cơ chế bảo mật được triển khai trong trình duyệt web, nhằm kiểm soát cách các tài nguyên (như JavaScript, CSS, hình ảnh) trên một trang web được truy cập từ các nguồn khác (cross-origin).
+**CORS** (Cross-Origin Resource Sharing) là một cơ chế bảo mật cho phép một trang web chạy ở một origin (domain) có thể yêu cầu tài nguyên từ một origin khác. Đây là một chính sách bảo mật của trình duyệt nhằm ngăn chặn các ứng dụng web thực hiện các yêu cầu không hợp lệ từ các domain khác nhau.
 
-Cơ chế hoạt động của CORS:
+### Origin là gì?
 
-1. Khi một trang web (origin) cố gắng truy cập tài nguyên từ một nguồn khác (cross-origin), trình duyệt sẽ gửi một yêu cầu OPTIONS đến máy chủ chứa tài nguyên.
-2. Máy chủ sẽ trả về các header cho phép hoặc từ chối yêu cầu truy cập, dựa trên cấu hình CORS.
-3. Trình duyệt sẽ kiểm tra các header này và quyết định cho phép hoặc từ chối yêu cầu truy cập.
+- **Origin** bao gồm `protocol (HTTP/HTTPS)`, `domain`, và `port`. Ví dụ: `https://example.com:8080`.
 
-Các header CORS quan trọng:
+### Tại sao cần CORS?
 
-- Access-Control-Allow-Origin: Chỉ định các nguồn được phép truy cập tài nguyên.
-- Access-Control-Allow-Methods: Chỉ định các phương thức HTTP được phép sử dụng.
-- Access-Control-Allow-Headers: Chỉ định các header được phép sử dụng.
+- Các trình duyệt thường áp dụng chính sách **Same-Origin Policy**, ngăn chặn các yêu cầu giữa các domain khác nhau để bảo vệ dữ liệu người dùng khỏi các tấn công như **CSRF (Cross-Site Request Forgery)**.
+- Tuy nhiên, trong nhiều ứng dụng hiện đại, việc cần truy cập tài nguyên từ các origin khác là phổ biến, đặc biệt trong các ứng dụng API.
 
-Ưu điểm của CORS:
+### Cách Hoạt Động của CORS
 
-- Bảo vệ khỏi các cuộc tấn công Cross-Site Scripting (XSS) và Cross-Site Request Forgery (CSRF).
-- Cho phép các ứng dụng web truy cập tài nguyên từ các nguồn khác một cách có kiểm soát.
-- Giúp ngăn chặn việc truy cập trái phép vào các tài nguyên nhạy cảm.
+1. **Preflight Request (Tùy chọn)**
+    
+    - Trước khi gửi một yêu cầu thực sự (đặc biệt là các yêu cầu phức tạp như POST, PUT, DELETE), trình duyệt sẽ gửi một yêu cầu `OPTIONS` đến server để kiểm tra xem server có cho phép yêu cầu từ origin khác hay không.
+    - Yêu cầu này kiểm tra các thông tin như:
+        - Phương thức HTTP được phép (`Access-Control-Allow-Methods`).
+        - Các header được phép (`Access-Control-Allow-Headers`).
+        - Origin của yêu cầu (`Access-Control-Allow-Origin`).
+2. **Simple Request**
+    
+    - Với các yêu cầu đơn giản (GET, POST với một số header cơ bản), trình duyệt có thể bỏ qua preflight và gửi yêu cầu trực tiếp. Server phản hồi sẽ bao gồm thông tin CORS.
+3. **Response Headers**
+    
+    - Nếu server cho phép, nó sẽ trả về các header CORS tương ứng:
+        - `Access-Control-Allow-Origin`: Chỉ định origin nào được phép (có thể là một domain cụ thể hoặc `*` để cho phép tất cả).
+        - `Access-Control-Allow-Methods`: Liệt kê các phương thức HTTP được phép.
+        - `Access-Control-Allow-Headers`: Liệt kê các header được phép.
+        - `Access-Control-Allow-Credentials`: Cho phép gửi thông tin xác thực (cookies, HTTP authentication).
 
-Triển khai CORS:
-
-- Trên phía máy chủ: Cấu hình các header CORS phù hợp với yêu cầu bảo mật.
-- Trên phía client (trình duyệt): Sử dụng các API như Fetch hoặc XMLHttpRequest để tuân thủ các quy tắc CORS.
-
-Lưu ý:
-
-- CORS chỉ áp dụng cho các trình duyệt web, không áp dụng cho các API được gọi trực tiếp.
-- Cấu hình CORS cần được thực hiện cẩn thận để tránh các vấn đề về bảo mật và khả năng truy cập.
-
-Tóm lại, CORS là một cơ chế bảo mật quan trọng, giúp kiểm soát việc truy cập tài nguyên từ các nguồn khác, góp phần tăng cường bảo mật cho các ứng dụng web.
