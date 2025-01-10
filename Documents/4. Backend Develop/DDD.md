@@ -73,3 +73,13 @@ Mỗi Bounded Context sẽ có mô hình riêng và có thể giao tiếp với 
 ### **Kết luận**
 
 Domain-Driven Design là một phương pháp mạnh mẽ giúp giải quyết các vấn đề phức tạp trong phát triển phần mềm. Bằng cách tập trung vào domain và hợp tác chặt chẽ với chuyên gia nghiệp vụ, DDD giúp tạo ra phần mềm chất lượng cao, dễ bảo trì và phù hợp với nhu cầu kinh doanh.
+
+
+---
+
+Nguyên tắc:
+- Application (Domain, Infrastructure)
+- Domain ko phụ thuộc
+- Infrastructure (Domain)
+- Controller (Application)
+- Start (Controller)
