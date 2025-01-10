@@ -24,4 +24,3 @@ Follow these steps to set up the project on your local machine:
    ```bash
    git clone https://github.com/TaiTitans/Experience.git
    cd Experience
-```
