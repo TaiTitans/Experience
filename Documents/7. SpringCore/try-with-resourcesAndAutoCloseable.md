@@ -21,9 +21,9 @@
   ```Java
   try (FileInputStream fis = new FileInputStream("input.txt")) {
     // Sử dụng fis để đọc dữ liệu từ file
-} catch (IOException e) {
+  } catch (IOException e) {
     // Xử lý ngoại lệ
-}
+  }
 ```
 
 Trong ví dụ trên:
