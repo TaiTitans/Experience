@@ -80,6 +80,6 @@ Domain-Driven Design là một phương pháp mạnh mẽ giúp giải quyết c
 Nguyên tắc:
 - Application (Domain, Infrastructure)
 - Domain ko phụ thuộc
-- Infrastructure (Domain)
+- Infrastructure (Domain) -> Cơ sở hạ tầng (kết nối mysql, kafka, redis,...)
 - Controller (Application)
 - Start (Controller)
