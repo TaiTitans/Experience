@@ -83,3 +83,6 @@ Nguyên tắc:
 - Infrastructure (Domain) -> Cơ sở hạ tầng (kết nối mysql, kafka, redis,...)
 - Controller (Application)
 - Start (Controller)
+
+Implement Code:
+Domain -> Infrastructure -> Application -> Controller
