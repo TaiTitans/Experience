@@ -79,3 +79,51 @@ for (int num : arr) {
 
 ```
 
+---
+Dưới đây là danh sách các kỹ thuật và thuật toán xử lý mảng phổ biến:
+
+### Kỹ thuật tìm kiếm (Searching Techniques):
+
+1. Tìm kiếm tuyến tính (Linear Search)
+2. Tìm kiếm nhị phân (Binary Search)
+3. Tìm kiếm nội suy (Interpolation Search)
+4. Tìm kiếm Fibonacci (Fibonacci Search)
+
+### Kỹ thuật sắp xếp (Sorting Techniques):
+
+1. Bubble Sort <
+2. Selection Sort <
+3. Insertion Sort <
+4. Merge Sort <
+5. Quick Sort <
+6. Heap Sort <
+7. Radix Sort
+8. Counting Sort
+9. Bucket Sort
+10. Shell Sort
+
+### Kỹ thuật thao tác trên mảng (Array Manipulation):
+
+1. Đảo ngược mảng (Reversing an Array)
+2. Xoay mảng (Rotating an Array)
+3. Tách và hợp mảng (Splitting and Merging Arrays)
+4. Loại bỏ phần tử trùng lặp (Removing Duplicates)
+5. Chèn và xóa phần tử (Insertion and Deletion)
+
+### Kỹ thuật tìm kiếm nâng cao (Advanced Searching Techniques):
+
+1. Tìm số xuất hiện lẻ (Find the Odd Occurring Element)
+2. Tìm cặp số có tổng bằng giá trị cho trước (Pair with a Given Sum)
+3. Tìm mảng con có tổng lớn nhất (Maximum Subarray Sum - Kadane’s Algorithm)
+4. Tìm phần tử phổ biến nhất (Most Frequent Element)
+
+### Kỹ thuật sắp xếp nâng cao (Advanced Sorting Techniques):
+
+1. Sắp xếp bằng thư viện (Library Sort)
+2. Sắp xếp kết hợp (Hybrid Sort - Tim Sort)
+
+### Các thuật toán tối ưu khác (Other Optimization Algorithms):
+
+1. Thuật toán Kadane’s (Kadane's Algorithm for Maximum Subarray Sum)
+2. Thuật toán phân loại nhanh hơn (Optimized Sorting Algorithms)
+3. Thuật toán tìm kiếm và sắp xếp đồng thời (Simultaneous Searching and Sorting)
