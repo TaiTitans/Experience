@@ -32,7 +32,8 @@ Follow these steps to set up the project on your local machine:
 - [Microservice](https://github.com/TaiTitans/Experience/tree/main/Documents/4.%20Backend%20Develop/Microservices)
 
 **Java Core**
-- [Java core](https://github.com/TaiTitans/Experience/tree/main/Documents/5.%20Java%20Core)
+
+- [Java SE 21](https://github.com/TaiTitans/Experience/tree/main/Documents/Java%20SE%2021)
 
 **Spring Core**
 - [IOC](https://github.com/TaiTitans/Experience/blob/main/Documents/7.%20SpringCore/IOC.md)
