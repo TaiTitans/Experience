@@ -45,3 +45,138 @@ public class BuiderString {
 }
 ```
 
+
+---
+Hiểu sâu về `String`, `StringBuilder`, và `StringBuffer` trong Java như một **Senior Java Developer** đòi hỏi bạn phải nắm rõ:
+
+- **Cấu trúc bộ nhớ và cách hoạt động của từng loại**
+- **Khác biệt trong tính bất biến (immutability)**
+- **Hiệu suất và cách sử dụng tối ưu**
+- **Thread-safety và các tình huống sử dụng phù hợp**
+- **Cách JVM xử lý String trong bộ nhớ**
+- **Cách tối ưu hóa và tránh memory leak**
+
+Hãy đi vào từng khía cạnh một cách chi tiết.
+
+## 1. `String` – Immutable và cơ chế Interning
+
+### 📌 Đặc điểm quan trọng:
+
+- `String` là **immutable** (bất biến), nghĩa là một khi đã tạo ra thì không thể thay đổi nội dung.
+- Khi thay đổi `String`, một đối tượng mới sẽ được tạo trong **heap memory** hoặc **String Pool**.
+- JVM có **String Interning**, giúp tái sử dụng các chuỗi giống nhau trong **String Pool**.
+
+### 🛠 Cách hoạt động của String Pool:
+```java
+String s1 = "hello";  // Tạo trong String Pool
+String s2 = "hello";  // Không tạo mới, dùng lại s1
+String s3 = new String("hello"); // Tạo mới trong heap, không vào String Pool
+
+System.out.println(s1 == s2); // true (cùng tham chiếu trong Pool)
+System.out.println(s1 == s3); // false (khác vùng nhớ)
+```
+🔥 **Lưu ý:** Nếu muốn đưa `s3` vào String Pool, dùng `intern()`
+```java
+String s4 = s3.intern();
+System.out.println(s1 == s4); // true
+```
+### 📉 Hạn chế của `String`:
+
+- Việc thay đổi giá trị dẫn đến **tạo đối tượng mới**, gây tốn bộ nhớ và hiệu suất kém khi xử lý nhiều thay đổi.
+- Ví dụ tệ khi dùng `String`:
+```java
+String result = "";
+for (int i = 0; i < 10000; i++) {
+    result += i; // Mỗi lần lặp tạo một String mới!
+}
+```
+💡 **Giải pháp:** Dùng `StringBuilder` hoặc `StringBuffer`.
+
+## 2. `StringBuilder` – Mutable và Hiệu suất cao
+
+### 📌 Đặc điểm quan trọng:
+
+- `StringBuilder` là **mutable**, tức là có thể thay đổi nội dung mà không tạo đối tượng mới.
+- Sử dụng **internal character array**, giúp tránh lãng phí bộ nhớ khi thay đổi chuỗi.
+- **Không thread-safe** nhưng nhanh hơn `StringBuffer`.
+
+### 🛠 Cách sử dụng:
+```java
+StringBuilder sb = new StringBuilder("Hello");
+sb.append(" World"); // Thay đổi nội dung mà không tạo object mới
+System.out.println(sb); // Hello World
+```
+### 📊 Hiệu suất vượt trội so với `String`:
+```java
+long startTime = System.nanoTime();
+StringBuilder sb = new StringBuilder();
+for (int i = 0; i < 10000; i++) {
+    sb.append(i);
+}
+long endTime = System.nanoTime();
+System.out.println("Execution Time: " + (endTime - startTime));
+```
+🔥 **Lưu ý:** `StringBuilder` nhanh hơn nhưng **không thread-safe**.
+
+## 3. `StringBuffer` – Thread-safe nhưng chậm hơn
+
+### 📌 Đặc điểm quan trọng:
+
+- Giống `StringBuilder` nhưng hỗ trợ **thread-safety** bằng cách dùng **synchronized**.
+- Thích hợp cho môi trường **multi-threaded**.
+
+### 🛠 Cách sử dụng:
+```java
+StringBuffer sb = new StringBuffer("Hello");
+sb.append(" World");
+System.out.println(sb); // Hello World
+```
+💡 **So sánh tốc độ `StringBuffer` vs `StringBuilder`:**
+```java
+long startTime = System.nanoTime();
+StringBuffer sb = new StringBuffer();
+for (int i = 0; i < 10000; i++) {
+    sb.append(i);
+}
+long endTime = System.nanoTime();
+System.out.println("StringBuffer Time: " + (endTime - startTime));
+```
+🔥 **Kết luận:** Nếu không cần đồng bộ (synchronization), hãy **dùng `StringBuilder` thay vì `StringBuffer`**.
+
+## 4. So sánh chi tiết
+
+|Đặc điểm|String|StringBuilder|StringBuffer|
+|---|---|---|---|
+|**Immutable?**|✅ Có|❌ Không|❌ Không|
+|**Thread-safe?**|✅ Có (Immutable)|❌ Không|✅ Có (Synchronized)|
+|**Hiệu suất**|🚫 Chậm|⚡ Nhanh|🐢 Chậm hơn SB|
+|**Dùng trong?**|Hằng số, ít thay đổi|Xử lý chuỗi nhanh|Đa luồng|
+## 5. Cách JVM xử lý String trong bộ nhớ
+
+### 📌 Heap vs Stack vs String Pool
+
+- **Heap Memory**: Chứa tất cả các object trong runtime.
+- **Stack Memory**: Chứa biến local, reference đến object trên heap.
+- **String Pool (PermGen/Metaspace)**: Chứa các chuỗi immutable được JVM tối ưu.
+```java
+String a = "Hello";       // Nằm trong String Pool
+String b = new String("Hello"); // Tạo object mới trên Heap
+```
+💡 **String Pool giúp tiết kiệm bộ nhớ nhưng nếu quá nhiều chuỗi, có thể gây OutOfMemoryError.**
+
+## 6. Khi nào dùng gì?
+
+✅ **Dùng `String` khi:**
+
+- Chuỗi không thay đổi nhiều.
+- Chuỗi cần sử dụng nhiều lần để tối ưu bộ nhớ (`intern()`).
+
+✅ **Dùng `StringBuilder` khi:**
+
+- Cần thay đổi chuỗi nhiều lần mà không cần thread-safety.
+- Xử lý văn bản lớn (concat, insert, replace).
+
+✅ **Dùng `StringBuffer` khi:**
+
+- Đang làm việc trong môi trường **đa luồng**.
+

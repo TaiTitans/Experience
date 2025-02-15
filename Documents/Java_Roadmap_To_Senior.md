@@ -1,127 +1,45 @@
 
 ---
-### Java Learning Path
+Để trở thành **Senior Java Developer**, bạn cần hiểu sâu về:
 
-#### Basic Knowledge
+✅ **Java Core**: Threads, Concurrency, Collections, Generics, Streams, Lambda, JVM internals.  
+✅ **Spring Ecosystem**: Spring Boot, Spring Security, Spring Data, Spring Cloud, Microservices.  
+✅ **Database & Caching**: SQL (PostgreSQL, MySQL), NoSQL (MongoDB, Redis), JPA/Hibernate.  
+✅ **Messaging & Event-Driven**: Kafka, RabbitMQ.  
+✅ **Distributed Systems**: CAP Theorem, Consistency Models, Circuit Breaker, Load Balancing.  
+✅ **DevOps & CI/CD**: Docker, Kubernetes, Terraform, Jenkins, GitHub Actions.  
+✅ **Scalability & Performance**: Caching, Profiling, Multithreading, Optimizations.  
+✅ **Architecture Patterns**: Monolithic vs Microservices, Clean Architecture, DDD, CQRS.
 
-- **Basic Concepts**
-    - Class and Object
-    - Inheritance, Polymorphism, Interfaces
-    - Encapsulation
-    - Exception Handling
-    - Collections
-    - Generics
-    - Multithreading
-    - IO
-    - Object-Oriented Programming (OOP)
-- **Basic Syntax**
-    - Variables
-    - Data Types
-    - Strings
-    - Keywords
-    - Loops
-    - Arrays
-    - Conditional Statements
-    - Serialization
-- **Tools**
-    - Git
-    - Maven/Gradle
-    - IntelliJ IDEA
+---
 
-#### Advanced Knowledge
+### **Lộ trình học theo từng giai đoạn**
 
-- **Design Patterns**
-    - Factory Pattern
-    - Singleton Pattern
-    - Proxy Pattern
-    - Decorator Pattern
-    - Composite Pattern
-    - Strategy Pattern
-    - Observer Pattern
-    - Template Pattern
-    - Chain of Responsibility Pattern
-    - State Pattern
-- **Frameworks**
-    - Spring
-    - SpringBoot
-    - MyBatis
-    - SpringMVC
-    - SpringCloud
-    - Dubbo
-    - Netty
-- **Performance Optimization**
-    - JVM
-    - Memory Model
-    - Garbage Collection Mechanisms
-    - High-Concurrency and High-Performance
+**📌 Giai đoạn 1: Nắm vững Java Core và Concurrency**
 
-#### Database (MySQL)
+- [x]  **Java Threads** 
+- [x]  **Java Concurrency (Virtual Machine & AQS)**
+- [x]  **Thread Pool, ExecutorService, CompletableFuture**
+- [x]  **Synchronized, Locks, Atomic Variables, ForkJoinPool**
+- [x]  **JVM (Heap, Stack, GC, JIT Compiler, ClassLoader, Profiling)**
 
-- **Fundamentals**
-    - Table Creation
-    - Indexing
-    - Stored Procedures and Triggers
-    - Data Types
-    - Transactions
-    - Joins
-    - Partitioning
-- **Advanced**
-    - Query Optimization
-    - Index Optimization
-    - Database Normalization
-    - Backup and Recovery
-    - Cluster and Replication
-    - Performance Tuning
+**📌 Giai đoạn 2: Master Spring Framework & Microservices**
 
-#### Middleware
+- [ ]  **Spring Boot, Spring Data, Spring Security, Spring Cloud**
+- [ ]  **JWT, OAuth2, API Gateway (Spring Cloud Gateway, Ory Hydra/Kratos)**
+- [ ]  **Microservices Patterns: Service Discovery, Circuit Breaker, Config Server**
+- [ ]  **Messaging với Kafka/RabbitMQ**
+- [ ]  **Distributed Tracing (Zipkin, OpenTelemetry)**
 
-- **Message Queue (MQ)**
-    - Kafka
-    - RabbitMQ
-    - ActiveMQ
-    - ZeroMQ
-    - RocketMQ
-- **Cache**
-    - Redis
-        - Basic Usage
-        - Expiration Policies
-        - Persistence
-        - Cache Penetration
-        - Cache Avalanche
-        - Cache Warm-Up
-        - Distributed Lock
-        - Data Sharding
-        - High Availability
+**📌 Giai đoạn 3: Tối ưu hiệu suất, hệ thống lớn & DevOps**
 
-#### Computing Knowledge
-
-- **Networking**
-    - TCP/IP
-    - HTTP/HTTPS
-    - WebSocket
-    - RESTful APIs
-- **Operating Systems**
-    - Linux
-    - Shell Scripting
-- **Algorithms and Data Structures**
-    - Sorting
-    - Searching
-    - Trees, Graphs, Heaps
-    - Dynamic Programming
-- **Data Communication**
-    - Protocols
-    - Error Detection and Correction
-    - Networking Models
-
-KeyCloak
-KISS
-Clean architecture
-Học cách xử lý logging trong hệ thống
-Naming convention
-Cqrs
-DDD
+- [ ]  **Database Optimization (Indexing, Query Optimization, Caching, Sharding)**
+- [ ]  **Redis, Memcached, Ehcache (Cache Aside, Write-through, Write-back)**
+- [ ]  **Docker, Kubernetes, Helm, Terraform**
+- [ ]  **CI/CD Pipelines (Jenkins, GitHub Actions, ArgoCD)**
 
 
+---
 **Khi gặp await thì luồng xử lý sao** ?
 
 > [!Result] Result
