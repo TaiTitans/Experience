@@ -30,7 +30,6 @@ Nếu chúng ta nhập câu lệnh SQL sai cú pháp, Parser sẽ báo lỗi.
 ```SQL
 mysql> select * form Member;
 ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'form Member at line 1
-
 ```
 
 Nhưng lưu ý rằng Parser chỉ chịu trách nhiệm kiểm tra cú pháp và xây dựng syntax tree, chứ không tra cứu bảng hoặc sự tồn tại của các trường.
