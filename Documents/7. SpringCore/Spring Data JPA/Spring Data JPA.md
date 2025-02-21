@@ -225,3 +225,146 @@ public class StudentController {
 
 Sau khi đã cấu hình và viết mã xong, bạn có thể chạy ứng dụng bằng cách sử dụng Gradle.
 
+---
+Nếu bạn muốn học sâu về **Spring Data JPA** như một **Senior Developer** về mặt lý thuyết, bạn cần tập trung vào những khía cạnh quan trọng dưới đây:
+
+---
+
+### **1. Kiến Trúc và Cơ Chế Hoạt Động của Spring Data JPA**
+
+- **Spring Data JPA là gì?**
+    
+    - Sự khác biệt giữa **Spring Data JPA**, **JPA** và **Hibernate**.
+    - Cách Spring Data JPA **trừu tượng hóa** JPA để giúp code đơn giản hơn.
+- **EntityManager và Unit of Work**
+    
+    - **EntityManager** hoạt động như thế nào?
+    - **Unit of Work Pattern** và cách Spring Data JPA quản lý các entity.
+- **Transactional Context trong Spring Data JPA**
+    
+    - Cách Spring quản lý **transaction**.
+    - **Propagation & Isolation Levels**.
+    - Cách **@Transactional** ảnh hưởng đến lifecycle của EntityManager.
+
+---
+
+### **2. Life Cycle của Entity trong JPA**
+
+- **Các trạng thái của Entity**
+    
+    - **New (Transient)**: Object mới, chưa có trong database.
+    - **Managed**: Object được quản lý bởi **EntityManager**.
+    - **Detached**: Object bị tách ra khỏi **Persistence Context**.
+    - **Removed**: Object bị đánh dấu để xóa.
+- **Entity Lifecycle Callbacks**
+    
+    - `@PrePersist`, `@PostPersist`, `@PreUpdate`, `@PostUpdate`, `@PreRemove`, `@PostRemove`, `@PostLoad`.
+    - Ứng dụng của các lifecycle callbacks trong business logic.
+
+---
+
+### **3. Mapping và ORM nâng cao**
+
+- **Mapping trong JPA**
+    
+    - `@OneToOne`, `@OneToMany`, `@ManyToOne`, `@ManyToMany`.
+    - Cách sử dụng **mappedBy** và **JoinColumn**.
+    - Khi nào nên dùng **unidirectional** và **bidirectional** relationships?
+- **Cascade & Fetching Strategies**
+    
+    - `CascadeType.ALL`, `CascadeType.PERSIST`, `CascadeType.MERGE`, `CascadeType.REMOVE`, `CascadeType.REFRESH`, `CascadeType.DETACH`.
+    - `FetchType.LAZY` vs `FetchType.EAGER` – Khi nào nên dùng cái nào?
+    - **N+1 Problem** và cách giải quyết bằng `@EntityGraph` hoặc **JOIN FETCH**.
+- **Inheritance trong JPA**
+    
+    - `@Inheritance(strategy = InheritanceType.SINGLE_TABLE)`
+    - `@Inheritance(strategy = InheritanceType.JOINED)`
+    - `@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)`
+    - Khi nào nên dùng **Mapped Superclass vs Inheritance?**
+
+---
+
+### **4. Querying và Performance Optimization**
+
+- **JPQL & Criteria API**
+    
+    - Viết **JPQL Queries** hiệu quả.
+    - Khi nào nên dùng **Criteria API** thay vì **JPQL**?
+- **Specifications & QueryDSL**
+    
+    - Cách sử dụng `JpaSpecificationExecutor` để tạo queries động.
+    - **QueryDSL** là gì? So sánh với **JPQL & Criteria API**.
+- **Pagination & Sorting**
+    
+    - Cách tối ưu **Pagination** khi dữ liệu lớn (`Pageable`).
+    - Khi nào nên dùng **keyset pagination** thay vì **offset pagination**?
+- **Projection & DTO Mapping**
+    
+    - Cách sử dụng `@Query` với **JPQL & Native Queries** để map kết quả vào **DTO**.
+    - Khi nào nên dùng **interface projection**, **class projection**, hoặc **Tuple**?
+- **Cache & Performance Optimization**
+    
+    - **First-level Cache vs Second-level Cache**.
+    - Cách sử dụng **EhCache, Redis, hoặc Hazelcast** để caching.
+    - Khi nào nên disable **hibernate auto-flush** để tối ưu performance?
+- **Batch Processing & Bulk Operations**
+    
+    - Cách **batch insert, update, delete** trong Spring Data JPA.
+    - Khi nào nên dùng **JDBC batching** thay vì JPA?
+
+---
+
+### **5. Xử Lý Transaction và Concurrency**
+
+- **Transaction Isolation Levels**
+    
+    - `READ_COMMITTED`, `REPEATABLE_READ`, `SERIALIZABLE`, `READ_UNCOMMITTED`.
+    - Cách xử lý vấn đề **Dirty Reads, Non-repeatable Reads, Phantom Reads**.
+- **Pessimistic vs Optimistic Locking**
+    
+    - Cách sử dụng `@Version` để tránh race condition.
+    - Khi nào nên dùng **Pessimistic Locking** (`PESSIMISTIC_READ`, `PESSIMISTIC_WRITE`).
+- **Deadlock & Database Locking Strategies**
+    
+    - Cách tránh **deadlock** trong Spring Data JPA.
+    - Khi nào nên dùng **Advisory Locks** trong PostgreSQL?
+
+---
+
+### **6. Event Listeners và Auditing**
+
+- **Spring Data JPA Auditing**
+    
+    - `@CreatedBy`, `@LastModifiedBy`, `@CreatedDate`, `@LastModifiedDate`.
+    - Khi nào nên dùng **Hibernate Interceptor** thay vì **Spring Auditing**?
+- **Application Events & Entity Listeners**
+    
+    - Cách sử dụng **ApplicationEventPublisher** để lắng nghe sự kiện thay đổi entity.
+    - Khi nào nên dùng **@EntityListeners** vs **Spring Events**?
+
+---
+
+### **7. Triển Khai Kiến Trúc Multi-Tenancy**
+
+- **Multi-Tenancy trong JPA**
+    - `DATABASE` (Mỗi tenant có database riêng).
+    - `SCHEMA` (Mỗi tenant có schema riêng).
+    - `DISCRIMINATOR` (Dùng một database với cột tenant_id).
+    - Khi nào nên dùng **Hibernate Multi-Tenancy Provider**?
+
+---
+
+### **8. Best Practices và Anti-Patterns**
+
+- **Best Practices**
+    
+    - **Không dùng EAGER loading trừ khi cần thiết**.
+    - **Luôn tối ưu queries với index & cache**.
+    - **Sử dụng DTO projection thay vì trả về Entity trong API**.
+    - **Batch processing khi làm việc với dữ liệu lớn**.
+- **Common Anti-Patterns**
+    
+    - **N+1 Query Problem**.
+    - **Overuse của CascadeType.ALL**.
+    - **Không kiểm soát transaction boundary**.
+    - **Không xử lý lỗi đúng cách với rollbackFor trong @Transactional**.
