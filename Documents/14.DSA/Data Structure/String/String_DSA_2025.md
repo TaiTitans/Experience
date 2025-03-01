@@ -187,3 +187,19 @@ public static int characterReplacement(String s, int k) {
 ✅ **Ứng dụng cấu trúc dữ liệu như HashMap, Trie**  
 ✅ **Tối ưu thuật toán bằng Sliding Window, KMP**
 
+---
+## 🔹 **String được lưu trong bộ nhớ như thế nào trong Java?**
+
+Trong Java, `String` là **immutable (bất biến)**, có nghĩa là khi một `String` được tạo, nó **không thể thay đổi nội dung**. Điều này ảnh hưởng đến cách `String` được lưu trong bộ nhớ.
+
+## **1. Bộ nhớ Heap và String Pool**
+
+Java lưu trữ `String` trong **Heap Memory**, cụ thể hơn là **String Pool (Bể nhớ chuỗi)**.
+
+### 🏗 **Cách hoạt động của String Pool**
+
+- Khi bạn tạo một `String` bằng cách **gán trực tiếp** (`String s = "Hello";`), Java sẽ **kiểm tra trong String Pool** xem chuỗi đó đã tồn tại chưa:
+    - Nếu có, nó sẽ **tái sử dụng** địa chỉ bộ nhớ cũ.
+    - Nếu chưa có, nó sẽ **tạo mới và lưu trong String Pool**.
+- Khi bạn tạo `String` bằng `new`, chuỗi **luôn được tạo mới trong Heap Memory**, không vào Pool.
+
