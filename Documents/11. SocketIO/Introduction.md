@@ -9,4 +9,3 @@
 - **Sự kiện tùy chỉnh**: Hỗ trợ việc tạo và lắng nghe các sự kiện tùy chỉnh, không chỉ đơn thuần là gửi/nhận tin nhắn.
 - **Quản lý phòng (rooms) và kênh (namespaces)**: Hỗ trợ tính năng chia phòng (rooms) để quản lý nhiều kết nối dễ dàng hơn, rất hữu ích cho các ứng dụng chat hoặc game đa người chơi.
 
-So sánh WebSocket và Socket.IO:
