@@ -24,14 +24,14 @@ JVM (Java Virtual Machine) định nghĩa các khu vực dữ liệu thời gian
 
 - Là vùng dữ liệu thời gian chạy được chia sẻ và lưu trữ đối tượng trong thực tế trong bộ nhớ. Được khởi tạo khi khởi động máy ảo.
 - Bộ nhớ này được phân bổ cho tất cả các thể hiện của lớp và mảng. Heap có thể có kích thước cố định hoặc động tuỳ thuộc vào cấu hình.
-- JVM cung cấp quyển kiểm soát của người dùng để khởi tạo hoặc thay đổi kích thước của heap tuỳ theo yêu cầu. Khi một từ khoá mới được sử dụng, đối tượng được gán vào một khoảng trắng trong heap, nhưng tham chiếu của nó vẫn tồn tại trong ngăn xếp.
+- JVM cung cấp quyển kiểm soát của người dùng để khởi tạo hoặc thay đổi kích thước của heap tuỳ theo yêu cầu. Khi một từ khoá mới được sử dụng, đối tượng được gán vào một khoảng trắng trong heap, nhưng tham chiếu của nó vẫn tồn tại trong Stack.
 - Chỉ tồn tại 1 heap trong một tiến trình JVM đang chạy.
 
 Ví dụ:
 ```
 Scanner sc = new Scanner(System.in);
 ```
-Câu lệnh trên tạo ra đối tượng của lớp Scanner được phân bổ vào heap trong khi tham chiếu 'sc' được đẩy vào ngăn xếp.
+Câu lệnh trên tạo ra đối tượng của lớp Scanner được phân bổ vào heap trong khi tham chiếu 'sc' được đẩy vào Stack.
 
 **Method Area:**
 
