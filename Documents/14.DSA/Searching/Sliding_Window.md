@@ -95,3 +95,30 @@ Sliding Window cực kỳ hữu ích trong nhiều bài toán thực tế như:
 2. **Tìm số lượng ký tự duy nhất lớn nhất trong một chuỗi con.**
 3. **Tìm chuỗi con có tổng nhỏ nhất thỏa mãn điều kiện.**
 4. **Kiểm tra một chuỗi có chứa tất cả ký tự của một chuỗi khác không.**
+---
+### Khi nào dùng Sliding Window?
+
+- Bài toán yêu cầu xử lý trên **đoạn con liên tục** (contiguous subarray/substring).
+- Có thể tính toán kết quả của cửa sổ mới dựa trên cửa sổ cũ mà không cần duyệt lại toàn bộ.
+- Ví dụ:
+    - Tìm tổng lớn nhất của đoạn con độ dài k.
+    - Tìm số lần xuất hiện tối thiểu của một ký tự trong đoạn con.
+    - Tìm đoạn con ngắn nhất chứa tất cả các ký tự cần thiết.
+
+### Cách hoạt động của Sliding Window
+
+#### Với Fixed Size Sliding Window:
+
+1. **Khởi tạo**: Tính kết quả cho cửa sổ đầu tiên (k phần tử đầu tiên).
+2. **Trượt**:
+    - Loại bỏ phần tử đầu cửa sổ cũ.
+    - Thêm phần tử mới vào cuối cửa sổ.
+    - Cập nhật kết quả (tổng, số lượng, min/max, v.v.).
+3. **Lặp lại**: Tiếp tục trượt cho đến khi duyệt hết mảng/chuỗi.
+
+#### Với Variable Size Sliding Window:
+
+1. **Khởi tạo**: Bắt đầu với cửa sổ rỗng hoặc nhỏ nhất.
+2. **Mở rộng**: Thêm phần tử mới vào cửa sổ cho đến khi thỏa mãn điều kiện.
+3. **Thu hẹp**: Nếu có thể, loại bỏ phần tử từ đầu để tối ưu hóa (vẫn giữ điều kiện).
+4. **Lặp lại**: Tiếp tục mở rộng và thu hẹp cho đến hết.
