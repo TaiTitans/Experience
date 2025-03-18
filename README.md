@@ -2,6 +2,8 @@
 
 **Experience Project** is is my experience and experience in the process of studying and practicing to become a senior Backend programmer.
 
+![Sakamoto](https://giffiles.alphacoders.com/223/223323.gif)
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -26,6 +28,9 @@ Follow these steps to set up the project on your local machine:
    cd Experience
 
 ## Process
+
+**Interview Question**
+- [Interview Questions](https://github.com/TaiTitans/Experience/tree/main/Documents/Interview)
 
 **Backend**
 - [Backend knowledge](https://github.com/TaiTitans/Experience/tree/main/Documents/4.%20Backend%20Develop)
@@ -68,7 +73,7 @@ Follow these steps to set up the project on your local machine:
 - [SQL Knowledge](https://github.com/TaiTitans/Experience/tree/main/Documents/6.%20SQL)
 
 **NoSQL**
-- [Comming Soon]()
+- [MongoDB](https://github.com/TaiTitans/Experience/tree/main/Documents/17.%20NoSQL)
 
 **Redis**
 - [Redis Knowledge](https://github.com/TaiTitans/Experience/tree/main/Documents/9.%20Redis)
@@ -77,10 +82,13 @@ Follow these steps to set up the project on your local machine:
 - [OOP Knowledge](https://github.com/TaiTitans/Experience/tree/main/Documents/8.%20OOP)
 
 **Kafka**
-- [Comming Soon]()
+- [Kafka Knowledge](https://github.com/TaiTitans/Experience/tree/main/Documents/12.%20Kafka)
 
 **ELK Stack**
 - [Comming Soon]()
 
 **Golang**
-- [Comming Soon]()
+- [Golang Basic](https://github.com/TaiTitans/Experience/tree/main/Documents/20.%20Golang)
+
+**Rust**
+- [Rust Knowledge](https://github.com/TaiTitans/Experience/tree/main/Documents/21.Rust)
