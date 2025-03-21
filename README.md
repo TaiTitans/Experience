@@ -1,6 +1,7 @@
 # Experience Project
 
 **Experience Project** is is my experience and experience in the process of studying and practicing to become a senior Backend programmer.
+![GitHub license](https://img.shields.io/github/license/TaiTitans/Experience) ![GitHub stars](https://img.shields.io/github/stars/TaiTitans/Experience) ![GitHub forks](https://img.shields.io/github/forks/TaiTitans/Experience)
 
 ![Sakamoto](https://giffiles.alphacoders.com/223/223323.gif)
 
