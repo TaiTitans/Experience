@@ -258,3 +258,24 @@ git clone git@github.com:taititans/Experiences.git
 ```bash
 git rm -r --cached .
 ```
+
+
+---
+- Quên commit nhưng đã checkout nhánh khác:
+```
+1. [/git stash] --> Lưu tạm thời các thay đổi hiện tại
+2. [/git checkout <branch>] --> Chuyển sang nhánh khác
+3. [/git stash pop] --> Áp dụng lại thay đổi đã lưu từ stash
+```
+- Commit nhầm vào main branch:
+```
+1. [/git branch <new-branch>] --> Tạo nhánh mới để lưu commit nhầm
+2. [/git reset HEAD~1] --> Hoàn tác commit cuối cùng trên main branch
+3. [/git checkout <new-branch>] --> Chuyển sang nhánh mới
+4. [/git add . && git commit -m "Chuyển commit nhầm"] --> Lưu lại commit trên nhánh mới
+```
+- Merge bị conflict quá nhiều:
+```
+1. [/git merge --abort] --> Hủy bỏ quá trình merge đang thực hiện
+2. [/git rebase <branch>] --> Thực hiện rebase nhánh để thay thế merge
+```
